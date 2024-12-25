@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ece6e6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #524444;
+}
+
+/* Форма добавления задач */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input:hover {
+  transform: scale(1.01);
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 315px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* Кнопка добавления задач */
+button {
+  padding: 10px 15px;
+  margin: 20px;
+  background-color: #febaad; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* :hover отвечает за стиль кнопки при наведении на неё курсора */
+button:hover {
+  background-color: #fcb3a4; /* Цвет при наведении на кнопку добавления */
+}
+
+/* todo-list-container */
+.todo-list-container {
+  
+  background-color: #fefafa; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 250px;
+  padding-right: 250px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта глубины */
+  width: 100%; 
+  max-width: 200px; /* Максимальная ширина контейнера */
+  margin: 0 auto; 
+}
+
+/* Фильтр задач */
+.task {
+    display: flex;
+    justify-content: center;
+    margin: 20px; 
+    align-items: center;
+}
+
+label {
+    margin-right: 15px; 
+    font-weight: bold; 
+    color: #524444;
+}
+
+select {
+    padding: 8px; /* Внутренние отступы для выпадающего списка */
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    cursor: pointer; /* Указатель при наведении */
+    transition: border-color 0.3s; /* Плавный переход цвета границы */
+}
+
+select:hover {
+    border-color: #ff8f78; /* Цвет границы при наведении */
+}
+
+select:focus {
+    outline: none; 
+}
+
+.background {
+  position: fixed;
+  top: -10%;
+  left: -30%;
+  width: 90px;
+  height: 90px;
+  z-index: -1;
+}
+
+.back-button {
+  background-color: #febaad;
+}
+
+.nav-button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #febaad;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #ffa08d; /* Darker shade on hover */
+}
+
+.navigation {
+  margin-top: 20px; /* Space above the navigation button */
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #febaad; /* Bootstrap primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #ffa08d; /* Darker shade on hover */
+}

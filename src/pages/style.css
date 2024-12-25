@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ece6e6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #524444;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Add Task Form */
+.add-task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.add-task-form input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-task-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input button {
+  padding: 10px 15px;
+  background-color: #febaad; /* Add task button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input button:hover {
+  background-color: #ffa08d; /* Darker shade on hover */
+}
+
+/* DND Container */
+.dnd-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Column styles */
+.column {
+  background-color: #febaad;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Fixed width for columns */
+  margin: 10px; /* Space between columns */
+  flex-shrink: 0; /* Prevent columns from shrinking */
+}
+
+/* Task item styles */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  color: #fff;
+  background-color: #ffcec5;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab; /* Indicate draggable item */
+}
+
+.task-item:hover {
+  background-color: #ffd5cd; /* Highlight on hover */
+}
+
+/* Navigation button */
+.back-button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #febaad; /* Bootstrap primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #ffa08d; /* Darker shade on hover */
+}
+
+/* Dragging styles */
+.dragging {
+  opacity: 0.5; /* Make dragged item semi-transparent */
+}
+
